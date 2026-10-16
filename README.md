@@ -11,6 +11,7 @@ jev/                  the package: rendering, feature caching, pointer head, LoR
 notebooks/            nine step-by-step notebooks, from opening the model to answering questions about images
 data/                 datasets: synthetic text tickets (converted and raw), hand-written examples, generated image data
 experiments/          the LoRA and vision experiment suites, report generator, side investigations, and the archive of the pointer-head scripts   (see experiments/README.md)
+runs/                 generated: cached backbone features and saved adapters and models   (see runs/README.md)
 results/              the written reports:
   RESULTS.md            pointer-head results on the frozen backbone, starting with its best configuration
   RESULTS_LORA.md       LoRA versus the frozen backbone on text tickets: best configuration, terms and columns explained, three seeds, ablations, learning curve, errors
@@ -110,7 +111,7 @@ The frozen-backbone results are in [RESULTS.md](results/RESULTS.md). The LoRA an
 ## Notes
 
 - Hardware used: RTX 5060 laptop GPU (8 GB), PyTorch 2.14 with CUDA 13.0 wheels, transformers built from its development branch (Qwen3.5 is newer than the last release).
-- `requirements.txt` lists `dotenv`; the package that provides `load_dotenv` is `python-dotenv`.
+- `python-dotenv` is used only by notebook 1, to read `HF_TOKEN` from `.env`.
 - `datasets` is listed for upcoming experiments on public datasets and is not used by the package yet.
 - Keep secrets such as `HF_TOKEN` in `.env` (ignored by git).
-- Generated data and trained models (`data/shapes*/`, `runs/`) are ignored by git.
+- Generated image data (`data/shapes*/`) and the feature cache `runs/cache/` are ignored by git. The cache is about 1.2 GB with files over 100 MB, so it cannot be pushed to GitHub. Saved adapters and heads elsewhere in `runs/` are tracked. See [runs/README.md](runs/README.md).

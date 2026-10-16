@@ -1,6 +1,6 @@
 # Experiment results log
 
-All results from building the jev pipeline on Qwen3.5-0.8B, in the order they were measured. Everything trained here is a pointer head on a frozen backbone. No LoRA run exists yet.
+All results from building the jev pipeline on Qwen3.5-0.8B, in the order they were measured. Everything trained here is a pointer head on a frozen backbone. LoRA and images came later and are reported in [RESULTS_LORA.md](RESULTS_LORA.md) and [RESULTS_VISION.md](RESULTS_VISION.md).
 
 ## Best configuration (pointer head on the frozen backbone)
 

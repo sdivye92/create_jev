@@ -1,8 +1,10 @@
 .env
 **/__pycache__/
 # generated artifacts
-runs/
+runs/cache/
 data/shapes/
 data/shapes_smoke/
 .ipynb_checkpoints/
 *.pt
+# keep the pointer heads that ship with saved adapters
+!runs/**/head.pt
