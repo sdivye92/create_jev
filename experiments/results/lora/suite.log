@@ -1,0 +1,15 @@
+skip main_crossentropy_seed0 (done)
+=== lora / main_crossentropy_seed1 (02:11:37) ===
+=== lora / main_crossentropy_seed2 (02:19:36) ===
+=== lora / main_brier_seed0 (02:27:35) ===
+=== lora / main_brier_seed1 (02:33:37) ===
+=== lora / main_brier_seed2 (02:39:38) ===
+=== lora / rank4_seed0 (02:45:40) ===
+=== lora / rank16_seed0 (02:51:01) ===
+=== lora / lr1e-4_seed0 (02:56:29) ===
+=== lora / lr5e-4_seed0 (03:01:51) ===
+=== lora / epochs4_seed0 (03:07:12) ===
+=== lora / size100_seed0 (03:17:02) ===
+=== lora / size200_seed0 (03:18:28) ===
+=== lora / size400_seed0 (03:20:27) ===
+suite lora finished 03:23:34

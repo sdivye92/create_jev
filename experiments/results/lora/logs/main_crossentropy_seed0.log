@@ -1,0 +1,16 @@
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+[main_crossentropy_seed0 02:04:53] frozen features ready: 14520 train, 3668 val examples (180.9s)
+[main_crossentropy_seed0 02:04:58] frozen head: val acc 0.961, stability 0.899
+epoch 0 step   50/304  loss 0.5652  (45s elapsed, peak GPU 2.7 GB)
+epoch 0 step  100/304  loss 0.4270  (89s elapsed, peak GPU 2.7 GB)
+epoch 0 step  150/304  loss 0.0980  (133s elapsed, peak GPU 2.7 GB)
+[main_crossentropy_seed0 02:07:15]   end of epoch 0: quick val acc 0.997
+epoch 1 step  200/304  loss 0.0154  (179s elapsed, peak GPU 2.7 GB)
+epoch 1 step  250/304  loss 0.0176  (224s elapsed, peak GPU 2.7 GB)
+epoch 1 step  300/304  loss 0.0055  (266s elapsed, peak GPU 2.7 GB)
+[main_crossentropy_seed0 02:09:31]   end of epoch 1: quick val acc 0.997
+[main_crossentropy_seed0 02:09:31] LoRA trained in 273.2s, peak GPU 2.73 GB, 5,111,808 trainable parameters
+[main_crossentropy_seed0 02:10:48] LoRA: val acc 0.992 (frozen 0.961), stability 0.988
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[main_crossentropy_seed0 02:10:48] wrote experiments/results/lora/main_crossentropy_seed0.json

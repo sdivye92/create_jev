@@ -1,0 +1,27 @@
+[epochs4_seed0 05:25:18] frozen features ready: 12800 train, 3200 val examples (0.2s)
+[epochs4_seed0 05:25:23] frozen head: val acc 0.949, stability 0.930
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+epoch 0 step   50/800  loss 0.3876  (54s elapsed, peak GPU 2.7 GB)
+epoch 0 step  100/800  loss 0.4257  (106s elapsed, peak GPU 2.7 GB)
+epoch 0 step  150/800  loss 0.1502  (158s elapsed, peak GPU 2.7 GB)
+epoch 0 step  200/800  loss 0.0985  (209s elapsed, peak GPU 2.7 GB)
+[epochs4_seed0 05:29:03]   end of epoch 0: quick val acc 0.963
+epoch 1 step  250/800  loss 0.1082  (272s elapsed, peak GPU 2.8 GB)
+epoch 1 step  300/800  loss 0.1136  (324s elapsed, peak GPU 2.8 GB)
+epoch 1 step  350/800  loss 0.0627  (375s elapsed, peak GPU 2.8 GB)
+epoch 1 step  400/800  loss 0.0559  (427s elapsed, peak GPU 2.8 GB)
+[epochs4_seed0 05:32:40]   end of epoch 1: quick val acc 0.981
+epoch 2 step  450/800  loss 0.0289  (490s elapsed, peak GPU 2.8 GB)
+epoch 2 step  500/800  loss 0.0346  (542s elapsed, peak GPU 2.8 GB)
+epoch 2 step  550/800  loss 0.0319  (593s elapsed, peak GPU 2.8 GB)
+epoch 2 step  600/800  loss 0.0290  (645s elapsed, peak GPU 2.8 GB)
+[epochs4_seed0 05:36:18]   end of epoch 2: quick val acc 0.981
+epoch 3 step  650/800  loss 0.0088  (708s elapsed, peak GPU 2.8 GB)
+epoch 3 step  700/800  loss 0.0093  (760s elapsed, peak GPU 2.8 GB)
+epoch 3 step  750/800  loss 0.0161  (811s elapsed, peak GPU 2.8 GB)
+epoch 3 step  800/800  loss 0.0191  (863s elapsed, peak GPU 2.8 GB)
+[epochs4_seed0 05:39:56]   end of epoch 3: quick val acc 0.983
+[epochs4_seed0 05:39:56] LoRA trained in 873.4s, peak GPU 2.8 GB, 5,111,808 trainable parameters
+[epochs4_seed0 05:42:31] LoRA: val acc 0.982 (frozen 0.949), stability 0.987
+[epochs4_seed0 05:42:31] wrote experiments/results/vision/epochs4_seed0.json

@@ -1,0 +1,17 @@
+[main_brier_seed0 04:11:32] frozen features ready: 12800 train, 3200 val examples (0.2s)
+[main_brier_seed0 04:11:37] frozen head: val acc 0.949, stability 0.928
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+epoch 0 step   50/400  loss 0.9558  (54s elapsed, peak GPU 2.7 GB)
+epoch 0 step  100/400  loss 0.5914  (105s elapsed, peak GPU 2.7 GB)
+epoch 0 step  150/400  loss 0.2241  (157s elapsed, peak GPU 2.7 GB)
+epoch 0 step  200/400  loss 0.1161  (208s elapsed, peak GPU 2.7 GB)
+[main_brier_seed0 04:15:16]   end of epoch 0: quick val acc 0.952
+epoch 1 step  250/400  loss 0.1156  (271s elapsed, peak GPU 2.8 GB)
+epoch 1 step  300/400  loss 0.0988  (322s elapsed, peak GPU 2.8 GB)
+epoch 1 step  350/400  loss 0.0606  (374s elapsed, peak GPU 2.8 GB)
+epoch 1 step  400/400  loss 0.0606  (426s elapsed, peak GPU 2.8 GB)
+[main_brier_seed0 04:18:53]   end of epoch 1: quick val acc 0.977
+[main_brier_seed0 04:18:53] LoRA trained in 435.9s, peak GPU 2.84 GB, 5,111,808 trainable parameters
+[main_brier_seed0 04:22:36] LoRA: val acc 0.979 (frozen 0.949), stability 0.970
+[main_brier_seed0 04:22:36] wrote experiments/results/vision/main_brier_seed0.json

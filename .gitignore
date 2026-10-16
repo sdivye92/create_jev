@@ -1,0 +1,8 @@
+.env
+**/__pycache__/
+# generated artifacts
+runs/
+data/shapes/
+data/shapes_smoke/
+.ipynb_checkpoints/
+*.pt

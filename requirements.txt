@@ -1,0 +1,16 @@
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch
+torchvision
+transformers @ git+https://github.com/huggingface/transformers.git@main
+accelerate
+pillow
+huggingface_hub
+safetensors
+numpy
+matplotlib
+jupyter
+ipykernel
+python-dotenv
+peft
+datasets

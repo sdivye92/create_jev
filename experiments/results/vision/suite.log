@@ -1,0 +1,15 @@
+=== vision / main_crossentropy_seed0 (03:23:43) ===
+=== vision / main_crossentropy_seed1 (03:41:40) ===
+=== vision / main_crossentropy_seed2 (03:56:33) ===
+=== vision / main_brier_seed0 (04:11:27) ===
+=== vision / main_brier_seed1 (04:22:37) ===
+=== vision / main_brier_seed2 (04:33:46) ===
+=== vision / rank4_seed0 (04:44:59) ===
+=== vision / rank16_seed0 (04:55:02) ===
+=== vision / lr1e-4_seed0 (05:05:08) ===
+=== vision / lr5e-4_seed0 (05:15:11) ===
+=== vision / epochs4_seed0 (05:25:13) ===
+=== vision / size100_seed0 (05:42:32) ===
+=== vision / size200_seed0 (05:46:26) ===
+=== vision / size400_seed0 (05:51:14) ===
+suite vision finished 05:57:46

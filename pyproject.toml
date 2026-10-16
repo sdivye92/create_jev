@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jev"
+version = "0.1.0"
+description = "Decision models on a vision-language backbone: one forward pass, a calibrated probability per option."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["torch", "transformers", "peft", "accelerate", "pillow", "numpy"]
+
+[project.scripts]
+jev = "jev.cli:main"
+
+[tool.setuptools]
+packages = ["jev"]

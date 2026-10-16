@@ -1,0 +1,12 @@
+[size400_seed0 03:20:32] frozen features ready: 7272 train, 3668 val examples (0.2s)
+[size400_seed0 03:20:35] frozen head: val acc 0.932, stability 0.850
+[transformers] `causal_conv1d_fn` is falling back to its reference PyTorch implementation because `causal_conv1d` is not installed. This is correct but much slower; install `causal_conv1d` for the optimized kernel.
+[transformers] `chunk_gated_delta_rule` is falling back to its reference PyTorch implementation because `flash-linear-attention` is not installed. This is correct but much slower; install `flash-linear-attention` for the optimized kernel.
+epoch 0 step   50/152  loss 1.0438  (44s elapsed, peak GPU 2.8 GB)
+[size400_seed0 03:21:45]   end of epoch 0: quick val acc 0.906
+epoch 1 step  100/152  loss 0.1071  (91s elapsed, peak GPU 2.8 GB)
+epoch 1 step  150/152  loss 0.0720  (134s elapsed, peak GPU 2.8 GB)
+[size400_seed0 03:22:54]   end of epoch 1: quick val acc 0.970
+[size400_seed0 03:22:54] LoRA trained in 139.4s, peak GPU 2.78 GB, 5,111,808 trainable parameters
+[size400_seed0 03:23:33] LoRA: val acc 0.964 (frozen 0.932), stability 0.922
+[size400_seed0 03:23:33] wrote experiments/results/lora/size400_seed0.json

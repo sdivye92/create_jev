@@ -1,0 +1,24 @@
+# Each line is one experiment: "tag|extra arguments".
+# A tag is "<what changes>_seed<N>" and is also the name of the result file in experiments/results/<group>/.
+#   main_crossentropy  the standard recipe, trained with cross-entropy only
+#   main_brier         the same recipe, with a Brier term added to the loss (--brier 1.0)
+#   rank4 / rank16     LoRA rank 4 or 16 instead of 8 (alpha is scaled with it)
+#   lr1e-4 / lr5e-4    LoRA learning rate 1e-4 or 5e-4 instead of 2e-4
+#   epochs4            4 passes over the training data instead of 2
+#   size100/200/400    only the first 100, 200 or 400 training records instead of 800
+#   seed0 / seed1 / seed2   the random seed (--seed). Same settings with a different seed repeats the experiment with different random luck
+# The three main_* configurations are run with seeds 0, 1 and 2 to measure the run-to-run spread, and also evaluate on the test set (--test). The ablations use seed 0 only and report validation only.
+main_crossentropy_seed0|--seed 0 --test
+main_crossentropy_seed1|--seed 1 --test
+main_crossentropy_seed2|--seed 2 --test
+main_brier_seed0|--seed 0 --brier 1.0 --test
+main_brier_seed1|--seed 1 --brier 1.0 --test
+main_brier_seed2|--seed 2 --brier 1.0 --test
+rank4_seed0|--seed 0 --rank 4 --alpha 8
+rank16_seed0|--seed 0 --rank 16 --alpha 32
+lr1e-4_seed0|--seed 0 --lora-lr 1e-4
+lr5e-4_seed0|--seed 0 --lora-lr 5e-4
+epochs4_seed0|--seed 0 --epochs 4
+size100_seed0|--seed 0 --n-train 100
+size200_seed0|--seed 0 --n-train 200
+size400_seed0|--seed 0 --n-train 400
